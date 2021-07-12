@@ -1,0 +1,25 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#jumbotron {
+background-color: #281335;
+color: lavender;
+font-weight: 800;
+padding: 50px;
+text-align: center;
+}
+
+.card {
+  margin: 10px;
+}
+
+.card-body {
+  background-color: #7abcce;
+}
+
+.card-area {
+  display: flex;
+  flex-wrap: wrap;
+}
