@@ -1,11 +1,11 @@
 // packages used in this application
-const Manager = require("./library/manager");
-const Engineer = require("./library/engineer");
-const Intern = require("./library/intern");
+const Manager = require("./library/Manager");
+const Engineer = require("./library/Engineer");
+const Intern = require("./library/Intern");
 const inquirer = require("inquirer");
 const fs = require("fs");
 
-const generateHTML = require('./src/generateHTML');
+const generateData = require('./src/GenerateData');
 
 let answerArr = [];
 
@@ -15,7 +15,7 @@ const questions = [
     type: 'list',
     name: 'role',
     message: 'What is the role for the employee you would like to add?',
-    choices: ['Manager', 'Engineer', 'Intern', 'Im all done!']
+    choices: ['Manager', 'Engineer', 'Intern', 'Im Finished!']
   }
 ];
 
@@ -100,7 +100,7 @@ function init() {
   // init questions
   inquirer.prompt(questions).then(answers => {
     // when done adding new employees then generate team
-    if (answers.role === 'Im finished!') {
+    if (answers.role === 'Im Finished!') {
       console.log(answerArr);
       generateTeam();
       return;
