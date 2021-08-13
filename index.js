@@ -5,7 +5,7 @@ const Intern = require("./library/Intern");
 const inquirer = require("inquirer");
 const fs = require("fs");
 
-const generateData = require('./src/GenerateData');
+const generateHTML = require('./src/GenerateHTML');
 
 let answerArr = [];
 
